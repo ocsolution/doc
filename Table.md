@@ -220,7 +220,7 @@ Use the `showTemplate` to hide the default table rows and columns, and instead d
 
 ```vue
 <template>
-   <OCTable stateKey="stateOCTable" :api="api" :columns="columns">
+   <OCTable :showTemplate="true" :api="api" :columns="columns">
       <template #template="[data]">
         <div class="w-full grid grid-cols-[repeat(auto-fill,minmax(263px,1fr))] items-center gap-3">
           <div v-for="d in data">
