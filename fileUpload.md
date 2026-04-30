@@ -29,6 +29,7 @@ const res = await useFileUpload(url, options, onProgress);
 # 📂 Example: Upload with Cancel Support
 Template:
 ```vue
+<template>
   <div
     v-if="!isLoading && documents.length > 0"
     class="w-full h-[240px] border-card rounded-2xl p-3"
@@ -127,6 +128,7 @@ Template:
       </OCTooltip>
     </div>
   </div>
+</template>
 ```
 
 Javascript
